@@ -6,6 +6,7 @@
   - `PyArray::new` is now `unsafe`, as it produces uninitialized arrays ([#220](https://github.com/PyO3/rust-numpy/pull/220))
   - Fix thread-safety in internal API globals ([#222](https://github.com/PyO3/rust-numpy/pull/222))
   - Make arrays produced via `IntoPyArray`, i.e. those owning Rust data, writeable ([#235](https://github.com/PyO3/rust-numpy/pull/235))
+  - `ndarray/rayon` feature is now removed, and directly specifying the feature via `ndarray` dependency is recommended ([#250](https://github.com/PyO3/rust-numpy/pull/250))
 
 - v0.15.0
   - [Remove resolver from Cargo.toml](https://github.com/PyO3/rust-numpy/pull/202)
